@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Kullanıcı Kayıt Formu</h2>
+        <form id="registrationForm" class="mt-4">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">Ad:</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Adınızı girin" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Soyad:</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Soyadınızı girin" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Cinsiyet:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="male" name="gender" value="Erkek" required>
+                    <label class="form-check-label" for="male">Erkek</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="female" name="gender" value="Kadın">
+                    <label class="form-check-label" for="female">Kadın</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="birthPlace">Doğum Yeri:</label>
+                <input type="text" class="form-control" id="birthPlace" name="birthPlace" placeholder="Doğum yerinizi girin" required>
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Doğum Tarihi:</label>
+                <input type="date" class="form-control" id="birthDate" name="birthDate" max="2025-12-31" required>
+            </div>
+            <div class="form-group">
+                <label for="occupation">Meslek:</label>
+                <select class="form-control" id="occupation" name="occupation" required>
+                    <option value="">Seçiniz</option>
+                    <option value="Öğretmen">Öğretmen</option>
+                    <option value="Memur">Memur</option>
+                    <option value="Doktor">Doktor</option>
+                    <option value="Mühendis">Mühendis</option>
+                    <option value="Asker">Asker</option>
+                    <option value="Hakim">Hakim</option>
+                    <option value="Çiftçi">Çiftçi</option>
+                    <option value="Serbest">Serbest</option>
+                    <option value="Diğer">Diğer</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Kaydet</button>
+        </form>
+        <div id="message" class="alert alert-success mt-3" style="display:none;">Kayıt başarılı!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient arka plan */
+    color: #333; /* Metin rengi */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam navbar arka planı */
+}
+
+.navbar-brand img {
+    max-width: 50px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Yarı saydam içerik arka planı */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
